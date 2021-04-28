@@ -1,6 +1,5 @@
 div {
     background-color: lightblue;
-    border: thin solid black;
 }
 main {
     background-color: lightgrey;
@@ -18,10 +17,13 @@ footer {
 * {
     box-sizing: border-box;
 }
+.testing-margin {
+    margin-right: -5px;
+}
+@media screen and (min-width: 568px) {
+
 .center-container {
     width: 90vw;
     margin: 0 auto;
 }
-.testing-margin {
-    margin-right: -4px;
 }
