@@ -1,0 +1,27 @@
+div {
+    background-color: lightblue;
+    border: thin solid black;
+}
+main {
+    background-color: lightgrey;
+}
+aside {
+    background-color: pink;
+}
+header {
+    border: dotted thin orange;
+}
+footer {
+    border: dashed thin green;
+}
+/*Delete the above styles when layout is complete*/
+* {
+    box-sizing: border-box;
+}
+.center-container {
+    width: 90vw;
+    margin: 0 auto;
+}
+.testing-margin {
+    margin-right: -4px;
+}
