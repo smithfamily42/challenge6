@@ -16,34 +16,56 @@
         <h1>Weather Dashboard</h1>
     </header>
     <div class="pure-g center-container"><!--Main container-->
-        <aside class="pure-u-1 pure-u-md-1-4">
+        <aside class="pure-u-1 pure-u-md-1-4 padding-md">
             <h2>Search for a City:</h2>
+            <form class="pure-form">
+                <input id="search-city" type="text" class="pure-input-rounded" />
+                <button type="submit" id="search-button" class="pure-button pure-input-rounded">Search</button>
+            </form>
+            <span class="message"></span>
+            <hr style="width: 100%;"/>
+
+                <ul class="button-grp">
+                    <li class="item-btn">Prior Location</li>
+                    <li class="item-btn">Prior Location2</li>
+                    <li class="item-btn">Prior Location3</li>
+                    <li class="item-btn">Prior Location4</li>
+                </ul>
         </aside>
         <main class="pure-g pure-u-1 pure-u-md-3-4"><!--Weather info container-->
             <div id="city-info" class="pure-u-1">
-                <h3>city info</h3>
-                <p id="current-conditions">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
             </div>
             <div id="forecast" class="pure-u-1 pure-g">
-                <div class="pure-u-md-1-5 testing-margin"><!--5 day forecast cards--><!--need to learn these in PureCSS-->
-                    <h5>Date</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>5 Day Forecast</h3>
+                <div class="pure-u-md-1-6 card"><!--5 day forecast cards-->
+                    <h4 id="fDate">Date</h4>
+                    <img id="fIcon" src="" alt="" />
+                    <p id="fWind">Wind</p>
+                    <p id="fHumidity">Humidity</p>                
                 </div>
-                <div class="pure-u-md-1-5 testing-margin">
-                    <h5>Date</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="pure-u-md-1-6 card">
+                    <h4>Date</h4>
+                    <img id="fIcon" src="" alt="" />
+                    <p>Wind</p>
+                    <p>Humidity</p>
                 </div>
-                <div class="pure-u-md-1-5 testing-margin">
-                    <h5>Date</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="pure-u-md-1-6 card">
+                    <h4>Date</h4>
+                    <img src="" alt="" />
+                    <p>Wind</p>
+                    <p>Humidity</p>
                 </div>
-                <div class="pure-u-md-1-5 testing-margin">
-                    <h5>Date</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="pure-u-md-1-6 card">
+                    <h4>Date</h4>
+                    <img src="" alt="" />
+                    <p>Wind</p>
+                    <p>Humidity</p>                
                 </div>
-                <div class="pure-u-md-1-5 testing-margin">
-                    <h5>Date</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="pure-u-md-1-6 card">
+                    <h4>Date</h4>
+                    <img src="" alt="" />
+                    <p>Wind</p>
+                    <p>Humidity</p>                
                 </div>
             </div><!--closing the forecast div-->
             
@@ -52,7 +74,8 @@
     </div><!--end main container-->
     
     <footer>
-        <p>Footer Content</p>
+        <p>&copy;2021 Brad Smith</p>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
